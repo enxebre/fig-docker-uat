@@ -16,3 +16,6 @@
 [submodule "dockerfiles/selenium-image/puppet-modules/puppetforge-modules/stdlib"]
 	path = dockerfiles/selenium-image/puppet-modules/puppetforge-modules/stdlib
 	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
+[submodule "behat"]
+	path = behat
+	url = https://github.com/enxebre/MinkExtension-example.git
