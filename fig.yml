@@ -1,0 +1,11 @@
+selenium:
+ build: dockerfiles/selenium-image
+# environment:
+#  - SELENIUM_PORT=3333
+behat:
+ build: dockerfiles/behat-image
+ command: sh run-behat.sh
+ volumes:
+  - behat/:/behat/
+ links:
+  - selenium:selenium

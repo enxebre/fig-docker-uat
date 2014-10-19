@@ -1,0 +1,7 @@
+[General]
+startWithLastProfile=1
+
+[Profile0]
+Name=behat
+IsRelative=1
+Path=customprofile.behat

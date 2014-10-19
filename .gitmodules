@@ -1,0 +1,18 @@
+[submodule "dockerfiles/selenium-image/puppet-modules/puppetforge-modules/concat"]
+	path = dockerfiles/selenium-image/puppet-modules/puppetforge-modules/concat
+	url = https://github.com/puppetlabs/puppetlabs-concat.git
+[submodule "dockerfiles/selenium-image/puppet-modules/puppetforge-modules/selenium"]
+	path = dockerfiles/selenium-image/puppet-modules/puppetforge-modules/selenium
+	url = https://github.com/jhoblitt/puppet-selenium.git
+[submodule "dockerfiles/selenium-image/puppet-modules/puppetforge-modules/display"]
+	path = dockerfiles/selenium-image/puppet-modules/puppetforge-modules/display
+	url = https://github.com/p0deje/puppet-display.git
+[submodule "dockerfiles/selenium-image/puppet-modules/puppetforge-modules/wget"]
+	path = dockerfiles/selenium-image/puppet-modules/puppetforge-modules/wget
+	url = https://github.com/maestrodev/puppet-wget.git
+[submodule "dockerfiles/selenium-image/puppet-modules/puppetforge-modules/logrotate"]
+	path = dockerfiles/selenium-image/puppet-modules/puppetforge-modules/logrotate
+	url = https://github.com/rodjek/puppet-logrotate.git
+[submodule "dockerfiles/selenium-image/puppet-modules/puppetforge-modules/stdlib"]
+	path = dockerfiles/selenium-image/puppet-modules/puppetforge-modules/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
