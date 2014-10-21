@@ -49,7 +49,7 @@ fig up
 * The behat service check if the selenium container is ready by using the script inspired by [docker-wait](https://github.com/aanand/docker-wait) and just run [behat](https://github.com/enxebre/MinkExtension-example) which is passed as a volume to the container.
 
 * We use fig for managing our basic UAT environment.
-**You can add as many selenium services** as you need to your fig.yml and **run different behavior-tests projects simultaneously** becouse as we are [linking containers](http://docs.docker.com/userguide/dockerlinks/) we **don´t have to worry about port collision troubles.**
+You can add as many selenium services as you need to your fig.yml and run different behavior-tests projects simultaneously becouse as we are [linking containers](http://docs.docker.com/userguide/dockerlinks/) we **don´t have to worry about port collision troubles.**
 ```yml
 selenium:
  build: dockerfiles/selenium-image
