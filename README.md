@@ -42,14 +42,14 @@ fig up
 
 * The repo contains two docker files, one for building a selenium image and the otherone for building an image with php so we can run Behat.
 
-* We use the power of the [dockerfiles](http://docs.docker.com/reference/builder/) for reusing our "uat_environment" puppet module (a wrapper over [selenium module](https://forge.puppetlabs.com/jhoblitt/selenium) and its dependencies) and create a [docker image](https://registry.hub.docker.com/u/enxebre/selenium-grid-firefox/) with an instance of selenium running.
+* We use the power of the [dockerfiles](http://docs.docker.com/reference/builder/) for reusing our "uat_environment" puppet module (a wrapper over [selenium module](https://forge.puppetlabs.com/jhoblitt/selenium) and its dependencies) and create a [docker image](https://registry.hub.docker.com/u/enxebre/selenium-grid-firefox/) with selenium running.
 
-* By default it runs a selenium grid with one node containing 5 instaces of firefox listening and vnc server listening on port 5900. This can be easily modified by suiting the "uat_environment" puppet module so you can run selenium standalone or whatever fits better to you.
+* By default it runs a selenium grid with one node containing 5 instaces of firefox listening and a vnc server listening on port 5900. This can be easily modified by suiting the puppet code so you can run selenium standalone or whatever fits better to you.
 
 * The behat service check if the selenium container is ready by using the script inspired by [docker-wait](https://github.com/aanand/docker-wait) and just run [behat](https://github.com/enxebre/MinkExtension-example) which is passed as a volume to the container.
 
 * We use fig for managing our basic UAT environment.
-You can add as many selenium services as you need to your fig.yml and run different behavior-tests projects simultaneously becouse as we are [linking containers](http://docs.docker.com/userguide/dockerlinks/) we **don´t have to worry about port collision troubles.**
+You can add as many selenium services as you need to your fig.yml and run different behavior-tests projects simultaneously because as we are [linking containers](http://docs.docker.com/userguide/dockerlinks/) we **don´t have to worry about port collision troubles.**
 ```yml
 selenium:
  build: dockerfiles/selenium-image
