@@ -62,3 +62,5 @@ behat:
 ```
 
 * You can now run **"fig up"** or any other fig command for orchestrating your services from Jenkins or any other **CI tool.**
+
+See http://capgemini.github.io/open%20source/automation/
